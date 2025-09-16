@@ -1,0 +1,123 @@
+/* Algemene body styling */
+body {
+    background: linear-gradient(135deg, #f9f3e7, #f0e6d6);
+    font-family: 'Poppins', sans-serif;
+    color: #5e3d0c;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    margin-top: 50px;
+}
+
+/* Cookie styling met schaduw en animatie */
+#cookie-container {
+    position: relative;
+    display: inline-block;
+}
+
+#cookie {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.1s, box-shadow 0.2s;
+}
+
+#cookie:active {
+    transform: scale(0.9) rotate(-5deg);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Score styling */
+#score {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #8b4513;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+/* Knoppen styling */
+.autoclicker, .upgrade, .theme, #reset-button {
+    padding: 12px 20px;
+    margin: 5px;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.autoclicker:hover, .upgrade:hover, .theme:hover, #reset-button:hover {
+    transform: scale(1.05);
+}
+
+/* Autoclicker knoppen */
+.autoclicker {
+    background: #d2691e;
+    color: #fff;
+    box-shadow: 0 5px #a0522d;
+}
+
+.autoclicker:active {
+    box-shadow: 0 2px #a0522d;
+}
+
+/* Upgrade knoppen */
+.upgrade {
+    background: #f4a261;
+    color: #fff;
+    box-shadow: 0 5px #e76f51;
+}
+
+.upgrade:active {
+    box-shadow: 0 2px #e76f51;
+}
+
+/* Theme knoppen */
+.theme {
+    background: #2a9d8f;
+    color: #fff;
+    box-shadow: 0 5px #21867a;
+}
+
+.theme:active {
+    box-shadow: 0 2px #21867a;
+}
+
+/* Reset knop */
+#reset-button {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    box-shadow: 0 5px #a6192e;
+}
+
+#reset-button:active {
+    box-shadow: 0 2px #a6192e;
+}
+
+/* Flexbox container styling voor overzicht */
+#autoclickers, #upgrades, #themes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Animatie voor score pop-up */
+@keyframes scorePop {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+#score.animate {
+    animation: scorePop 0.3s ease;
+}

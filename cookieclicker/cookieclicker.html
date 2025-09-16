@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap voor layout en knoppen -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Cookie Clicker Game</h1>
+        <p>Score: <span id="score">0</span></p>
+        
+        <div id="cookie-container">
+            <img src="./img/cookie.jpg" alt="Cookie" id="cookie">
+        </div>
+        
+        <div class="mt-4">
+            <h3>Autoclickers</h3>
+            <div id="autoclickers" class="d-flex justify-content-center flex-wrap gap-2"></div>
+        </div>
+
+        <div class="mt-4">
+            <h3>Upgrades</h3>
+            <div id="upgrades" class="d-flex justify-content-center flex-wrap gap-2"></div>
+        </div>
+
+        <div class="mt-4">
+            <h3>Themes / Skins</h3>
+            <div id="themes" class="d-flex justify-content-center flex-wrap gap-2"></div>
+        </div>
+
+        <button id="reset-button" class="btn btn-warning mt-4">Reset Score</button>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
