@@ -87,22 +87,6 @@ function buyUpgrade(i){
     }
 }
 
-// Themes / Skins
-const themesData = [
-    { name: "Chocolate", bg: "#d2691e" },
-    { name: "Vanilla", bg: "#f3e5ab" },
-    { name: "Strawberry", bg: "#ff6f91" },
-    { name: "Mint", bg: "#a7f3d0" }
-];
-
-const themesContainer = document.getElementById('themes');
-themesData.forEach((theme, i) => {
-    const btn = document.createElement('div');
-    btn.className = 'theme';
-    btn.textContent = theme.name;
-    btn.addEventListener('click', () => document.body.style.backgroundColor = theme.bg);
-    themesContainer.appendChild(btn);
-});
 
 // Autoclicker productie
 setInterval(() => {
@@ -119,4 +103,21 @@ document.getElementById('reset-button').addEventListener('click', () => {
     autoclickersData.forEach((a,i)=> a.cost = [10,50,200,1000,5000,10000,50000,100000][i]);
     upgradesContainer.querySelectorAll('.upgrade').forEach(btn => btn.style.display = 'block');
     updateScore();
+});
+
+// Themes / Skins
+const themesData = [
+    { name: "Chocolate", bg: "#d2691e" },
+    { name: "Vanilla", bg: "#f3e5ab" },
+    { name: "Strawberry", bg: "#ff6f91" },
+    { name: "Mint", bg: "#a7f3d0" }
+];
+
+const themesContainer = document.getElementById('themes');
+themesData.forEach((theme, i) => {
+    const btn = document.createElement('div');
+    btn.className = 'theme';
+    btn.textContent = theme.name;
+    btn.addEventListener('click', () => document.body.style.backgroundColor = theme.bg);
+    themesContainer.appendChild(btn);
 });
