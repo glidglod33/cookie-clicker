@@ -16,7 +16,7 @@ body {
 }
 
 /* Cookie styling met schaduw en animatie */
-#cookie-container {
+#cookieImg { 
     position: relative;
     display: inline-block;
 }
