@@ -121,3 +121,46 @@ body {
 #score.animate {
     animation: scorePop 0.3s ease;
 }
+
+/* ===== Theme classes  ===== */
+
+body.theme-chocolate {
+  background: linear-gradient(135deg, #d2691e, #8b4513);
+  color: #3b1d0b;
+}
+body.theme-chocolate .autoclicker { background: #8b4513; box-shadow: 0 5px #5a3210; color: #fff; }
+body.theme-chocolate .upgrade { background: #c36a2b; box-shadow: 0 5px #8b3f14; color: #fff; }
+body.theme-chocolate .theme { background: #7a3f1a; box-shadow: 0 5px #5a3210; color: #fff; }
+body.theme-chocolate #reset-button { background: #9b1f1f; box-shadow: 0 5px #6b1111; color: #fff; }
+
+body.theme-vanilla {
+  background: linear-gradient(135deg, #fff4d6, #f3e5ab);    
+  color: #5e3d0c;
+}
+body.theme-vanilla .autoclicker { background: #d4a373; box-shadow: 0 5px #a8754a; color: #fff; }
+body.theme-vanilla .upgrade { background: #f4a261; box-shadow: 0 5px #e07640; color: #fff; }
+body.theme-vanilla .theme { background: #cda06e; box-shadow: 0 5px #9b6f47; color: #fff; }
+body.theme-vanilla #reset-button { background: #e63946; box-shadow: 0 5px #a6192e; color: #fff; }
+
+body.theme-strawberry {
+  background: linear-gradient(135deg, #ff8fa3, #ff6f91);
+  color: #fff;
+}
+body.theme-strawberry .autoclicker { background: #c9184a; box-shadow: 0 5px #8b1032; color: #fff; }
+body.theme-strawberry .upgrade { background: #ff7a9b; box-shadow: 0 5px #b24a63; color: #fff; }
+body.theme-strawberry .theme { background: #b71b3f; box-shadow: 0 5px #7f112a; color: #fff; }
+body.theme-strawberry #reset-button { background: #9b1326; box-shadow: 0 5px #610b16; color: #fff; }
+
+body.theme-mint {
+  background: linear-gradient(135deg, #bdf4de, #a7f3d0);
+  color: #064e3b;
+}
+body.theme-mint .autoclicker { background: #10b981; box-shadow: 0 5px #0b7a5c; color: #fff; }
+body.theme-mint .upgrade { background: #34d399; box-shadow: 0 5px #1f8e6b; color: #fff; }
+body.theme-mint .theme { background: #0ea57f; box-shadow: 0 5px #0b745a; color: #fff; }
+body.theme-mint #reset-button { background: #0b9a6d; box-shadow: 0 5px #075a40; color: #fff; }
+
+/* Smooth transitions for theme changes */
+body, .autoclicker, .upgrade, .theme, #reset-button {
+  transition: background 0.45s ease, color 0.45s ease, box-shadow 0.45s ease;
+}
